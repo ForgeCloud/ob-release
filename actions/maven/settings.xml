@@ -5,10 +5,10 @@
     <servers>
         <server>
             <!-- This id must match the distributionManagement section in pom.xml -->
-            <id>forgerock-private-releases</id>
-            <username>${env.FR_PRIVATE_REPO_USER}</username>
+            <id>${env.MAVEN_REPO_SERVER_ID}</id>
+            <username>${env.MAVEN_REPO_SERVER_USERNAME}</username>
             <!-- Credential stored in Travis CI -->
-            <password>${env.FR_PRIVATE_REPO_PASSWORD}</password>
+            <password>${env.MAVEN_REPO_SERVER_PASSWORD}</password>
         </server>
     </servers>
 </settings>
